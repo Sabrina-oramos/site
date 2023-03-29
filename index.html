@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS bijus</title>
+</head>
+
+<body>
+
+    <header style="background-image: url(./imagens/S.png);">
+<div class="container"> 
+    <nav> <!--usado para criar menu-->
+        <ul class="ul">
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a class="btn" href="#">Contatos</a>
+        </ul>
+    </nav>
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Bijus</h1>
+            <p>Precisa de uma repaginada no visual? Que tal adquirir aquelas bijuterias lindas que estava de olho?</p>
+            <a href="#" class="btn ">Catalogo</a>
+        </div>
+    </section>
+</div>
+
+    </header>
+
+    <section id="secao-aneis">
+        <img class="imagem" src="./imagens/aneis.png" alt="imagem">
+        <div id="texto-apresentacao">
+            <h2>Mais vendidos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel porro nesciunt sed minus quos
+                eligendi
+                atque iste rem sunt, quisquam non odio magni numquam esse cumque quidem ea dicta.</p>
+            <a href="#secao-aneis" class="btn">Anéis</a>
+        </div>
+    </section>
+
+    <section id="secao-brincos">
+        <div id="texto-apt">
+            <h2>Qualidade aliada à resistência</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel porro nesciunt sed minus quos
+                eligendi
+                atque iste rem sunt, quisquam non odio magni numquam esse cumque quidem ea dicta.</p>
+                <a href="#secao-brincos" class="btn">Brincos</a>
+            </div>
+            <img class="imagem-brincos" src="./aneis__1_-removebg-preview.png" alt="imagem">
+    </section>
+
+    <selection class="categorias">
+        <div class="container">
+            <h3>Ver por categorias</h3>
+            <p>A coleção Tiffany Lock incorpora os laços pessoais 
+                que nos unem e nos tornam quem somos.</p>
+                <!--Card item 1-->
+                <div class="cards">
+                    <div class="card-itens">
+                        <img src="./imagens/Logo.png" alt="logo">
+                        <p class="secao">Brincos</p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel porro nesciunt sed minus quos
+                            eligendi atque iste rem sunt, quisquam non odio magni numquam esse cumque quidem ea dicta
+                        </p>
+                    </div>
+                </div>
+                <!--end card item 1-->
+                <!--card item 2-->
+                <div class="cards">
+                    <div class="card-itens">
+                        <img src="./imagens/Logo.png" alt="logo">
+                        <p class="secao">Brincos</p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel porro nesciunt sed minus quos
+                            eligendi atque iste rem sunt, quisquam non odio magni numquam esse cumque quidem ea dicta
+                        </p>
+                    </div>
+                </div>
+                <!--end card item 2-->
+                <!--card item 3-->
+                <div class="cards">
+                    <div class="card-itens">
+                        <img src="./imagens/Logo.png" alt="logo">
+                        <p class="secao">Brincos</p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel porro nesciunt sed minus quos
+                            eligendi atque iste rem sunt, quisquam non odio magni numquam esse cumque quidem ea dicta
+                        </p>
+                    </div>
+                </div>
+                <!--end card item 3-->
+        </div>
+    </selection>
+<!--VALORES-->
+    <section id="secao-orcamento">
+        <form action="">
+            <h3>Orçamento</h3>
+
+            <label for="qtde">Qtde de Páginas</label>
+            <input type="number" id="qtde" min="1" value="1">
+
+            <label for="js">Precisa de JS?</label>
+            <input type="checkbox" id="js">
+
+            <label for="layout">Precisa de Layout?</label>
+            <div>
+                <input type="radio" id="layout_sim" name="layout">
+                <label for="layout_sim">Sim, preciso de layout</label>
+
+                <input type="radio" id="layout_nao" name="layout">
+                <label for="layout_nao">Não, já tenho</label>
+            </div>
+
+            <label for="prazo">Prazo</label>
+            <input type="range" id="prazo">
+
+            <output>R$ 0,00</output>
+        </form>
+    </section>
+    <!--END VALORES-->
+</body>
+</html>
