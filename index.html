@@ -5,21 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BS bijus</title>
+    <script src="loader.js"></script>
 </head>
 
 <body>
-
+    <div class="loader">
+        <div class="spin"></div>
+    </div>
     <header style="background-image: url(./imagens/S.png);">
-<div class="container"> 
-    <nav> <!--usado para criar menu-->
-        <ul class="ul">
-            <a href="#">Home</a>
-            <a href="#">Sobre</a>
-            <a href="#">Serviços</a>
-            <a class="btn" href="#">Contatos</a>
-        </ul>
-    </nav>
+    <div class="container"> 
+<nav>
+    <div class="menu-btn">
+        <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+    </div>
+
+    <ul>
+        <li><a href="#banner" class="active">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#pecas">Peças</a></li>
+        <li><a href="#secao-frete">Frete</a></li>
+    </ul>
+</nav>
+<script src="main.js"></script>
+       <!-- <nav> usado para criar menu
+            <ul class="ul">
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Serviços</a>
+                <a class="btn" href="#">Contatos</a>
+            </ul>
+        </nav>
+    JAVASCRIPT-->
+    
+    
     <section class="banner">
         <div class="banner-text">
             <h1>Bijus</h1>
@@ -38,87 +58,167 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel porro nesciunt sed minus quos
                 eligendi
                 atque iste rem sunt, quisquam non odio magni numquam esse cumque quidem ea dicta.</p>
-            <a href="#secao-aneis" class="btn">Anéis</a>
+            <a href="#secao-aneis" class="btn">Saiba mais</a>
         </div>
     </section>
 
-    <section id="secao-brincos">
+    <section id="sobre">
         <div id="texto-apt">
             <h2>Qualidade aliada à resistência</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel porro nesciunt sed minus quos
                 eligendi
                 atque iste rem sunt, quisquam non odio magni numquam esse cumque quidem ea dicta.</p>
-                <a href="#secao-brincos" class="btn">Brincos</a>
+                <a href="#secao-brincos" class="btn">Saiba mais</a>
             </div>
-            <img class="imagem-brincos" src="./aneis__1_-removebg-preview.png" alt="imagem">
+            <img class="imagem-brincos" src="imagens/aneis__1_-removebg-preview.png" alt="imagem">
     </section>
+    
+<!--<section id="secao-projetos">
+    <ul>
+        <li>
+            <div class="card">
+                <div class="card-img-wrapper">
+                  <img src="https://i.pinimg.com/564x/fc/a7/07/fca70772c9ad15a27be8a3ea7a9746cc.jpg" alt="imagem do projeto " />
+                </div>
+                <div class="card-text">
+                    <h2>Brincos</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <a href="#" class="botao">saiba mais</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <div class="card-img-wrapper">
+                  <img src="https://i.pinimg.com/564x/b9/0c/b6/b90cb68255d78a98784d251b2b048449.jpg" alt="imagem do projeto " />
+                </div>
+                <div class="card-text">
+                    <h2>Colares</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, voluptate dolorum provident error ut libero?</p>
+                    <a href="#" class="botao"> saiba mais</a>
+                </div>
+        </li>
+        <li>
+            <div class="card">
+                <div class="card-img-wrapper">
+                  <img src="https://i.pinimg.com/564x/99/8b/fd/998bfd4c1842846d1c889a371471204d.jpg" alt="imagem do projeto " />
+                </div>
+                <div class="card-text">
+                    <h2>Pulseiras</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime molestias quis! Quis, quos aspernatur!</p>
+                    <a href="#" class="botao"> saiba mais</a>
+                </div>
+        </li>
+    </ul>
+</section>-->
 
-    <selection class="categorias">
-        <div class="container">
-            <h3>Ver por categorias</h3>
-            <p>A coleção Tiffany Lock incorpora os laços pessoais 
-                que nos unem e nos tornam quem somos.</p>
-                <!--Card item 1-->
-                <div class="cards">
-                    <div class="card-itens">
-                        <img src="./imagens/Logo.png" alt="logo">
+
+
+
+
+
+<section id="pecas">
+    <ul>
+        <li>
+            <div class="card">
+                <div class="card-img-wrapper">
+                  <img src="https://i.pinimg.com/564x/82/72/b7/8272b7101c3ff1de11973aef810fb1a6.jpg" alt="logo" />
+                </div>
+                <div class="card-text">
+                    <h2>Colares</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <a href="#" class="botao">saiba mais</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <div class="card-img-wrapper">
+                  <img src="https://i.pinimg.com/564x/99/8b/fd/998bfd4c1842846d1c889a371471204d.jpg" alt="logo" />
+                </div>
+                <div class="card-text">
+                    <h2>Pulseiras</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, voluptate dolorum provident error ut libero?</p>
+                    <a href="#" class="botao"> saiba mais</a>
+                </div>
+        </li>
+        <li>
+            <div class="card">
+                <div class="card-img-wrapper">
+                  <img src="https://i.pinimg.com/564x/63/f7/3c/63f73ce8715b53b9babc6951ac23f08f.jpg" alt="logo" />
+                </div>
+                <div class="card-text">
+                    <h2>Anéis</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime molestias quis! Quis, quos aspernatur!</p>
+                    <a href="#" class="botao"> saiba mais</a>
+                </div>
+        </li>
+    </ul>
+</section>
+
+
+
+
+
+
+<!--    <section class="categorias">
+        Card item 1
+        <div class="cards">
+            <div class="card-itens">
+                <img class="imgs" src="./imagens/Logo.png" alt="logo">
                         <p class="secao">Brincos</p>
-                        <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel porro nesciunt sed minus quos
-                            eligendi atque iste rem sunt, quisquam non odio magni numquam esse cumque quidem ea dicta
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Harum vel porro nesciunt sed minus quos eligendi atque iste rem sunt.
                         </p>
                     </div>
                 </div>
-                <!--end card item 1-->
-                <!--card item 2-->
-                <div class="cards">
+                <card item 2-->
+               <!-- <div class="cards">
                     <div class="card-itens">
-                        <img src="./imagens/Logo.png" alt="logo">
-                        <p class="secao">Brincos</p>
-                        <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel porro nesciunt sed minus quos
-                            eligendi atque iste rem sunt, quisquam non odio magni numquam esse cumque quidem ea dicta
+                        <img class="imgs" src="./imagens/Logo.png" alt="logo">
+                        <p class="secao">Colares</p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Harum vel porro nesciunt sed minus quos eligendi atque iste rem sunt.
                         </p>
                     </div>
                 </div>
-                <!--end card item 2-->
-                <!--card item 3-->
+                end card item 2
+                card item 3
                 <div class="cards">
                     <div class="card-itens">
-                        <img src="./imagens/Logo.png" alt="logo">
-                        <p class="secao">Brincos</p>
-                        <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel porro nesciunt sed minus quos
-                            eligendi atque iste rem sunt, quisquam non odio magni numquam esse cumque quidem ea dicta
+                        <img class="imgs" src="./imagens/Logo.png" alt="logo">
+                        <p class="secao">Pulseiras</p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Harum vel porro nesciunt sed minus quos eligendi atque iste rem sunt.
                         </p>
                     </div>
                 </div>
-                <!--end card item 3-->
-        </div>
-    </selection>
+                <end card item 3>
+            </div>
+    </section>
+CARDS END-->
+   
+
 <!--VALORES-->
-    <section id="secao-orcamento">
-        <form action="">
-            <h3>Orçamento</h3>
-
-            <label for="qtde">Qtde de Páginas</label>
-            <input type="number" id="qtde" min="1" value="1">
-
-            <label for="js">Precisa de JS?</label>
-            <input type="checkbox" id="js">
-
-            <label for="layout">Precisa de Layout?</label>
-            <div>
-                <input type="radio" id="layout_sim" name="layout">
-                <label for="layout_sim">Sim, preciso de layout</label>
-
-                <input type="radio" id="layout_nao" name="layout">
-                <label for="layout_nao">Não, já tenho</label>
-            </div>
-
-            <label for="prazo">Prazo</label>
-            <input type="range" id="prazo">
-
-            <output>R$ 0,00</output>
-        </form>
-    </section>
-    <!--END VALORES-->
+<section id="secao-frete">
+    <form action="#">
+        <h3>Frete</h3>
+        <label for="qtde">Qtd de peças</label>
+        <input type="number" id="qtde" min="1" value="1">
+        <label for="foleados">Peça foleada?</label>
+        <input type="checkbox" id="foleados">
+        <label for="estado">É de São Paulo?</label>
+        <div class="input-group">
+            <input type="radio" id="estado_sim" name="estado">
+            <label for="estado_sim">Sim</label>
+            <input type="radio" id="estado_nao" name="estado">
+            <label for="estado_nao">Não</label>
+        </div>
+        <output>R$ 0,00</output>
+    </form>
+</section>
+</main>
 </body>
+<script src="script.js"></script>
+<script src="script.js"></script>
 </html>
